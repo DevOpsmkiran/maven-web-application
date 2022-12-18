@@ -100,13 +100,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.234.117.28:8081/repository/scotia-release/</url>
+	      <url>http://3.110.83.192:8081/repository/scotia-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.234.117.28:8081/repository/scotia-snapshot/</url>
+	      <url>http://3.110.83.192:8081/repository/scotia-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
