@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Mithun Software Solutions - Web Hook  Practice  .....</h1>
+<h1 align="center">Welcome to Mithun Software Solutions - Slack  Practice  .....</h1>
 <h1 align="center"> Studemt of MSS
 	<h2> Currently stuyding Devops </h2>
 	<h6> Slack Notify</h6>
