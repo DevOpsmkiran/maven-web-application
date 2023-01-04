@@ -6,6 +6,7 @@ node{
     
     stage('checkoutfromGit')
     {
+        sendSlackNotifications('STARTED')
         git branch: 'development', credentialsId: '932a7806-d5a8-488f-a360-c9ef95e65cdd', url: 'https://github.com/DevOpsmkiran/maven-web-application.git'
     }
     
@@ -56,6 +57,6 @@ def sendSlackNotifications(String buildStatus = 'STARTED') {
   }
 
   // Send notifications
-  slackSend (color: colorCode, message: summary, channel: 'soc')
+  slackSend (color: colorCode, message: summary, channel: '#soc')
 }
 
