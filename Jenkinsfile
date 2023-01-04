@@ -6,19 +6,6 @@ tools{
 maven 'maven3.8.5'
 }
 
-options {
-  timestamps()
-  buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))
-  
-}
-
-triggers {
-  pollSCM('* * * * *')
-  //cron ('* * * * *')
-}
-
-
-
 //This stage will get the Source from the Github
 stages{
 stage('CheckOutCode'){
@@ -52,7 +39,7 @@ stage('DeployAppIntoTomcatServer')
 steps{
       sshagent(['ca8d71e0-fff9-430e-b498-a6a95b21e64b']) {
             
-            sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@13.127.148.43:/opt/apache-tomcat-9.0.65/webapps/"
+            sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@172.31.40.246:/opt/apache-tomcat-9.0.65/webapps/"
         }
   /*
     sshagent(['dc292b7a-3b39-4630-9fc3-1b806b54412c']) {
